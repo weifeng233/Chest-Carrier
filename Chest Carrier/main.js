@@ -26,7 +26,7 @@ Translation.addTranslation("Chest Carrier", {zh: "搬箱器", ru: "Ящик пе
 IDRegistry.genItemID("chestCarrier");
 Item.createItem("chestCarrier", "Chest Carrier", {name: "chest_carrier", meta: 0}, {stack: 1});
 Item.setToolRender(ItemID.chestCarrier, true);
-Recipes.addShaped({id: ItemID.chestCarrier, data: 0, count: 1}, [["x x"], [" x "], [" x "]], ["x", 280, 0]);
+Recipes.addShaped({id: ItemID.chestCarrier, data: 0, count: 1}, ["x x", " x ", " x "], ["x", 280, 0]);
 Item.registerIconOverrideFunction("chestCarrier", function(item, name){
 	return {name: "chest_carrier", meta: item.data?1:0};
 });
